@@ -1,0 +1,17 @@
+body{
+text-align:center;
+font-family:sans-serif;
+}
+
+video{
+width:45%;
+border-radius:10px;
+}
+
+@media(max-width:600px){
+video{
+width:90%;
+display:block;
+margin:auto;
+}
+}

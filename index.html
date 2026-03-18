@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501470497974966"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <input id="username" placeholder="Enter name">
+<button onclick="saveUser()">Login</button>
+    <h1>Random video chat </h1>
+        <video id="localVideo" autoplay muted width="300"></video>
+        <video  id="remoteVideo" autoplay width="300"></video>
+        <br><br>
+        <select id="gender">
+<option value="any">Any</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+</select>
+    <button onclick="startChat()">Start Chat</button>
+    <button onclick="nextUser()">Next</button>
+    
+    <div>
+        <input id="messageInput"         
+placeholder="Type message">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+    <div id="chatBox"></div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+    
+        
+    
+</body>
+</html>
